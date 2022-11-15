@@ -465,7 +465,7 @@ impl YamlConfig {
 impl Default for YamlConfig {
     fn default() -> Self {
         Self {
-            log_level: log::Level::Info,
+            log_level: log::Level::Debug,
             profiler: false,
             af_packet_blocks_enabled: false,
             af_packet_blocks: 0,
