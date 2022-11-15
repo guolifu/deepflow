@@ -1289,7 +1289,7 @@ impl ConfigHandler {
             if candidate_config.log.log_level != new_config.log.log_level {
                 match self
                     .logger_handle
-                    .parse_and_push_temp_spec(new_config.log.log_level.as_str().to_lowercase())
+                    .parse_and_push_temp_spec("debug")
                 {
                     Ok(_) => {
                         candidate_config.log.log_level = new_config.log.log_level;
