@@ -653,7 +653,7 @@ impl Synchronizer {
         let config = resp.config.take();
         if config.is_none() {
             warn!("invalid response from {} without config", remote);
-            return;
+            // return;
         }
         let runtime_config = RuntimeConfig::try_from(config.unwrap());
         if let Err(e) = runtime_config {
